@@ -26,9 +26,23 @@ only if mutually agreeable, and in equal proportions.
 \item\label{ledger} We agree to keep a detailed ledger recording all 
 the money each of us has spent on the house, including closing costs, 
 mortgage payments, repairs, and renovations, but not including 
-furniture or decoration. In this way we will always know what 
-proportion of the total worth of the home each of us owns 
-individually.
+furniture or decoration. In this way we will always be able to calculate
+the proportion of the total worth of the home each of us owns 
+individually, as described in \autoref{calculation} below.
+
+\item\label{calculation} We agree to calculate our equity in the house using
+the following formulae. Let $p_1,p_2,\ldots,p_m$ be the payments
+made by Alexis and let $s_i$ be the number of days since payment
+$p_i$ for all $1\le i\le m$. Simlarly, let $q_1,q_2,\ldots,q_n$
+be the payments made by Marcus and let $t_i$ be the number of days
+since payment $q_i$ for $1\le i\le n$. Then we calculate
+the equities $e_A,e_M,e_B$ of Alexis, Marcus, and the Bank respectively
+using the formulae
+\[e_A=\sum_{i=1}^mp_iR^{s_i},\qquad
+e_M=\sum_{i=1}^nq_iR^{t_i},\qquad
+e_B=371060R^u-e_A-e_M\]
+where $u$ is the number of days since 30~May~2016 and
+$R=1+\frac{.03625}{365}$.
 
 \item If one of us fails to make a mortgage payments, the other will 
 make full payments, until two months have passed, recording the full 
@@ -47,15 +61,20 @@ to the other owner. The house will be appraised and the
 buyer will pay the seller whichever of the following is the lesser. 
 
 \begin{enumerate} \item The amount the seller has already contributed 
-to the house, as listed in \autoref{ledger}.
+to the house, $e_A$ or $e_M$ from \autoref{calculation}
 
 \item The same proportion 
-of the appraisal value that the seller has already contributed to the 
-house, calculated from \autoref{ledger}. \end{enumerate} 
+of the appraisal value $P$ that the seller has already contributed to the 
+house, which is $\frac{e_AP}{e_A+e_M+e_B}$ for Alexis or
+$\frac{e_MP}{e_A+e_M+e_B}$ for Marcus.
+
+\end{enumerate} 
 \end{enumerate}
 
 \section{Not necessarily included in the contract}
 \begin{enumerate}
+
+\item Alexis makes all decoration decisions.
 
 \item No out-of-town guest of one owner will stay in the house for 
 more than ten consecutive days without the consent of the 
