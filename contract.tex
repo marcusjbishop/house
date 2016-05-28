@@ -13,41 +13,27 @@
 \section{To be included in the contract}
 \begin{enumerate}
 
-\item We agree that Alexis will pay \$1000 and Marcus \$1500 per 
-month to the mortgage, to be paid in two installments every month. 
-Alexis will submit the payments on the first and the fifteenth of 
-every month. Marcus will transfer his share to our joint account on 
-the 31st and the 14th of every month.
+\item Alexis will pay \$1000 and Marcus \$1500 per 
+month towards the mortgage, to be paid in two installments every month. 
+Marcus will transfer his share to our joint account on 
+the 31st and the 14th of every month. Alexis will submit the payments from our joint account 
+on the first and the fifteenth of every month. 
 
 \item We will both pay \$500 per month to our joint account for house 
-expenses. We will contribute more to the joint account as needed, but 
+expenses. We will contribute more/less to the joint account as needed, but 
 only if mutually agreeable, and in equal proportions.
 
 \item\label{ledger} We agree to keep a detailed ledger recording all 
 the money each of us has spent on the house, including closing costs, 
 mortgage payments, repairs, and renovations, but not including 
-furniture or decoration. In this way we will always be able to calculate
-the proportion of the total worth of the home each of us owns 
-individually, as described in \autoref{calculation} below.
+furniture or decoration. It is this ledger which will determine and track each of our equity percentage at any time. 
+This ledger will be kept up to date in the master branch of our shared git-hub repository located at https://github.com/marcusjbishop/house.
 
-\item\label{calculation} We agree to calculate our equity in the house using
-the following formulae. Let $p_1,p_2,\ldots,p_m$ be the payments
-made by Alexis and let $s_i$ be the number of days since payment
-$p_i$ for all $1\le i\le m$. Simlarly, let $q_1,q_2,\ldots,q_n$
-be the payments made by Marcus and let $t_i$ be the number of days
-since payment $q_i$ for $1\le i\le n$. Then we calculate
-the equities $e_A,e_M,e_B$ of Alexis, Marcus, and the Bank respectively
-using the formulae
-\[e_A=\sum_{i=1}^mp_iR^{s_i},\qquad
-e_M=\sum_{i=1}^nq_iR^{t_i},\qquad
-e_B=371060R^u-e_A-e_M\]
-where $u$ is the number of days since 30~May~2016 and
-$R=1+\frac{.03625}{365}$.
 
-\item If one of us fails to make a mortgage payments, the other will 
+\item If one of us fails to make a mortgage payment, the other will 
 make full payments, until two months have passed, recording the full 
 payments in the ledger \autoref{ledger}
-as payments made soley by him or her.
+as payments made solely by him or her.
 However, after two months have passed,
 the delinquent owner will record {\em negative} 50\% 
 of his or her usual payment in the ledger, while the paying owner
@@ -57,16 +43,14 @@ will continue to record his or her full payment.
 first five years of ownership, except in cases of medical emergency, 
 death of a family member, or loss of job. After five years either 
 owner can sell his or her share of the house, but only
-to the other owner. The house will be appraised and the 
-buyer will pay the seller whichever of the following is the lesser. 
+to the other owner. The house will be appraised at the time of sale. Purchase price will be determined as follows:
+Let $E$ be the percent equity we own in the house (vs. the bank) at the time of sale.
+Let $P_s$ be the percent equity that the seller has at the time of sale (determined by our internal ledger \autoref{ledger}).
+Let $A$ be the appraised value of the house at the time of sale.
+Then, the buyer will pay the seller $E*P_s * A$ for their share of the house. Any resulting transfer taxes/fees will be equally split between Alexis and Marcus.
+ 
 
-\begin{enumerate} \item The amount the seller has already contributed 
-to the house, $e_A$ or $e_M$ from \autoref{calculation}
 
-\item The same proportion 
-of the appraisal value $P$ that the seller has already contributed to the 
-house, which is $\frac{e_AP}{e_A+e_M+e_B}$ for Alexis or
-$\frac{e_MP}{e_A+e_M+e_B}$ for Marcus.
 
 \end{enumerate} 
 \end{enumerate}
