@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[colorlinks,breaklinks,linkcolor=red,citecolor=blue]
 {hyperref} 
+\usepackage{breakurl}
 \usepackage{charter}
 \def\itemautorefname~#1\null{(#1)\null}
 \usepackage{eulervm}
@@ -10,8 +11,20 @@
 \begin{document}
 \maketitle
 
-\section{To be included in the contract}
+%\section{To be included in the contract}
 \begin{enumerate}
+
+\item\label{JointAccount}
+We will maintain a shared bank account with
+\href{https://www.towerfcu.org}{Tower Federal Credit Union}
+from which we both can withdraw and into which we can both deposit
+money. The account will be used for house expenses, possibly including
+groceries and materials for less substantial home renovations.
+
+\item We will both pay \$500 per month to our joint account 
+\autoref{JointAccount} for house 
+expenses. We will contribute more or less to the joint account as 
+needed, but only if mutually agreeable, and always in equal amounts.
 
 \item Alexis will pay \$1000 and Marcus \$1500 per month towards the 
 mortgage, to be paid in two installments every month. Marcus will 
@@ -19,31 +32,27 @@ transfer his share to our joint account on the 31st and the 14th of
 every month. Alexis will submit the payments from our joint account 
 on the first and the fifteenth of every month.
 
-\item We will both pay \$500 per month to our joint account for house 
-expenses. We will contribute more or less to the joint account as 
-needed, but only if mutually agreeable, and always in equal amounts.
-
 \item\label{ledger} We agree to keep a detailed ledger recording all 
-the money each of us has spent on the house, including closing costs, 
-mortgage payments, repairs, and renovations, but not including 
+the money each of us has privately spent on the house,
+including closing costs, mortgage payments, repairs, and renovations, but not including 
 furniture or decoration. It is this ledger which will determine and 
-track each of our individual proportions of our equity in the home. 
+track each of our individual proportions of our joint equity in the home. 
 This ledger will be kept up to date in the master branch of our 
-shared git-hub repository located at 
-\href{ttps://github.com/marcusjbishop/house}
-{\tt https://github.com/marcusjbishop/house}.
+shared {\tt git}~repository located at 
+\burl{https://github.com/marcusjbishop/house}.
 
 \item If one of us fails to make a mortgage payment, the other will 
-make full payments, until two months have passed, recording the full 
+make full {\em minimum} payments of \$2198 per month,
+until two months have passed, recording the \$2198
 payments in the ledger \autoref{ledger} as payments made solely by 
 him or her. However, after two months have passed, the delinquent 
 owner will record {\em negative} 50\% of his or her usual payment in 
 the ledger, while the paying owner will continue to record his or her 
-full payment.
+full payment of \$2198.
 
 \item Neither owner will sell his or her share of the house in the 
 first five years of ownership, except in extreme situations such as 
-medical emergency, or loss of job. After five years either owner can 
+medical emergency or loss of job. After five years either owner can 
 sell his or her share of the house, but only to the other owner. The 
 house will be appraised at the time of sale. Purchase price will be 
 determined as follows: Let $E$ be the percent equity we own in the 
@@ -55,6 +64,7 @@ $EPA$ for their share of the house. Any resulting transfer
 taxes/fees will be equally split between Alexis and Marcus.
  
 \end{enumerate}
+\end{document}
 
 \section{Not necessarily included in the contract} \begin{enumerate}
 
