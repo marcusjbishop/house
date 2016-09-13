@@ -1,5 +1,18 @@
-5/4/2016,475,0,'appraisal'
-5/3/2016,350,0,'house inspection'
-5/2/2016,3600,0,'earnest money'
-5/2/2016,79,0,'chimney inspection'
-5/24/2016,0,12000,'down payment marcus'
+Date,Alexis ,Marus,Description,Days since investment,Alexis: present worth of investment,Marcus: present worth of investment,Total present worth
+5/2/2016,"$3,600.00",,earnest money,134,"$3,601.98",$0.00,
+5/2/2016,$89.00,,chimney inspection,134,$89.05,$0.00,
+5/3/2016,$350.00,,house inspection,133,$350.19,$0.00,
+5/4/2016,$475.00,,appraisal,132,$475.26,$0.00,
+5/23/2016,$85.00,,termite inspection,113,$85.04,$0.00,
+5/28/2016,"$47,000.00","$12,000.00",downpayment/closing,108,"$47,020.86","$12,005.33",
+6/21/2016,"$1,000.00",,floor downpayment,84,"$1,000.35",$0.00,
+6/23/2016,"$1,000.00","$1,500.00",payment1,82,"$1,000.34","$1,500.51",
+6/25/2016,"$3,090.00",,floor balance,80,"$3,091.02",$0.00,
+7/5/2016,$500.00,$750.00,payment2a,70,$500.14,$750.22,
+7/18/2016,$500.00,$750.00,payment2b,57,$500.12,$750.18,
+8/14/2016,"$1,000.00","$1,500.00",payment3,30,"$1,000.12","$1,500.18",
+9/11/2016,$247.66,,Insteon light switches,2,$247.66,$0.00,
+9/12/2016,"$1,000.00","$1,500.00",payment4,1,"$1,000.00","$1,500.01",
+9/13/2016,"$4,865.00",,Bathroom renovation deposit,0,"$4,865.00",$0.00,
+TOTAL,"$64,801.66","$13,500.00",,,"$64,827.13","$18,006.42","$82,833.55"
+PERCENTAGE,78.26%,21.74%,,,,,
